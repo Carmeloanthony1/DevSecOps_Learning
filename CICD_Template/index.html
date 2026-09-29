@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kedai Kopi Nusantara | Home</title>
+    <link rel = "stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg">
+  <div id = "navbar" class="container-fluid">
+    <a class="navbar-brand" href="#">Kedai Kopi Nusantara</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarScroll">
+      <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href= "Index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href=aAbout.html">About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="menu.html">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="gallery.html">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Banner-->
+<section id = "galery-container">
+  <div id = "galery-content">
+    <video autoplay muted loop playsinline id="bg-video">
+      <source src="assets/bg_video.webm" type="video/webm">
+      <source src="assets/bg_video.mp4" type="video/mp4">
+    </video>
+    <div id="content">
+      <h1>Kedai Kopi Nusantara</h1>
+      <p>"Satu Nusa, Beda Rasa, Tetap Kopi"</p>
+      <a href = "Menu.html" id="check-menu">Check out our menu</a>
+    </div>
+  </div>
+</section>
+
+<!-- Card Section -->
+<div id ="card-container" class="container-fluid my-5">
+  <div id="card" class="row g-4 justify-content-center">
+    <h1>Our Best Seller</h1>
+    <!-- Item 1 -->
+    <div id = "card_item" class="col-12 col-sm-6 col-md-2">
+      <div class="card h-100 shadow-sm">
+        <img src="assets/Gayo_bali.webp" class="card-img-top" alt="gayo_bali">
+        <div class="card-body">
+          <h2>Kopi Gayo</h2>
+          <p class="card-text">Kopi Arabika unggulan asal Dataran Tinggi Gayo, Aceh, yang diakui dunia karena cita rasanya yang khas.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Item 2 -->
+    <div id = "card_item" class="col-12 col-sm-6 col-md-2">
+      <div class="card h-100 shadow-sm">
+        <img src="assets/luwak.webp" class="card-img-top" alt="luwak">
+        <div class="card-body">
+          <h2>Kopi Luwak</h2>
+          <p class="card-text">Kopi seduhan kopi menggunakan yang biji kopinya diambil dari sisa kotoran luwak/musang kelapa</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Item 3 -->
+    <div id = "card_item" class="col-12 col-sm-6 col-md-2">
+      <div class="card h-100 shadow-sm">
+        <img src="assets/mandailing.webp" class="card-img-top" alt="mandailing">
+        <div class="card-body">
+          <h2>Kopi Mandailing</h2>
+          <p class="card-text">Kopi arabika khas dari Pegunungan Bukit Barisan, wilayah Mandailing Natal, Sumatera Utara, yang terkenal di dunia internasional dengan sebutan Mandheling coffee</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Item 4 -->
+    <div id = "card_item" class="col-12 col-sm-6 col-md-2">
+      <div class="card h-100 shadow-sm">
+        <img src="assets/Toraja-Coffee.webp" class="card-img-top" alt="toraja">
+        <div class="card-body">
+          <h2>Kopi Toraja</h2>
+          <p class="card-text">Kopi Arabika legendaris dari dataran tinggi Tana Toraja, Sulawesi Selatan, yang dikenal di dunia internasional sebagai "Queen of Coffee" karena rasanya yang khas.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer id="footer-container" class="footer-section text-center text-lg-start mt-5">
+  <div class="container p-4">
+    <div class="row mt-3">
+      <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+        <h5 class="text-uppercase fw-bold">Kedai Kopi Nusantara</h5>
+        <p>
+          Menyajikan cita rasa kopi terbaik dari seluruh pelosok Nusantara. Satu Nusa, Beda Rasa, Tetap Kopi.
+        </p>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4 mb-md-0 text-center">
+        <h5 class="text-uppercase fw-bold mb-3">Navigasi</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="index.html" class="text-decoration-none footer-link">Home</a></li>
+          <li class="mb-2"><a href="about.html" class="text-decoration-none footer-link">About Us</a></li>
+          <li class="mb-2"><a href="menu.html" class="text-decoration-none footer-link">Menu</a></li>
+          <li class="mb-2"><a href="gallery.html" class="text-decoration-none footer-link">Gallery</a></li>
+          <li class="mb-2"><a href="contact.html" class="text-decoration-none footer-link">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase fw-bold mb-3">Kontak Kami</h5>
+        <p class="mb-1"><i class="bi bi-geo-alt"></i> Jl. Kopi Nusantara No. 123, Ngawi</p>
+        <p class="mb-1"><i class="bi bi-envelope"></i> info@kedaikopinusantara.id</p>
+        <p class="mb-1"><i class="bi bi-telephone"></i> +62 812 3456 7890</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-center p-3 copyright-bar">
+    © 2026 Kedai Kopi Nusantara. All Rights Reserved.
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,465 @@
+body {
+    background-color: #D8D0c5 !important;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.navbar {
+    background-color: #D9C4A9 !important;
+    padding: 8px;
+}
+
+.nav-item {
+    display: flex;
+    font-size: 24px;
+    gap: 24px;
+}
+
+@media (max-width: 991px) {
+    #navbar {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        flex-wrap: wrap !important;
+    }
+
+    .navbar-collapse .navbar-nav {
+        display: flex !important;
+        flex-direction: column !important; 
+        justify-content: center !important;
+        align-items: center !important;
+        width: 100%;
+        gap: 12px;                      
+        margin-top: 15px !important;   
+        overflow-x: auto;              
+        white-space: nowrap;          
+        padding-bottom: 8px;
+    }
+
+    .navbar-nav-scroll {
+        max-height: none !important;
+        overflow: visible !important;
+    }
+
+    .nav-item {
+        font-size: 16px;
+    }
+
+    #content h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #content p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #about_content h2, #about_content p{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #Team_Profile_Body{
+        display: flex !important;
+        gap: 32px !important;
+    }
+
+    .team_photo img{
+        width: 150px !important;
+        height: 150px !important;
+    }
+
+    #kumpulan_photo{
+        display: flex;
+        flex-direction: column;
+    }
+
+.photo_item {
+        position: relative !important;
+        height: 220px !important;
+        overflow: hidden;
+        border-radius: 12px;
+        cursor: pointer;
+    }
+
+    .photo_item img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+        display: block;
+    }
+
+    .badge_photo {
+        position: absolute !important;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.65) !important; 
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: opacity 0.25s ease-in-out;
+        z-index: 5;
+    }
+
+    .photo_item:active .badge_photo,
+    .photo_item:focus .badge_photo,
+    .photo_item:focus-within .badge_photo,
+    .photo_item:hover .badge_photo {
+        opacity: 1 !important;
+    }
+
+    .badge_photo span {
+        color: #ffffff !important; 
+        font-size: 15px !important;
+        font-weight: 600;
+        text-align: center;
+        padding: 8px 16px;
+    }
+
+}
+
+#galery-content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    height: 80vh;
+    overflow: hidden;
+    gap: 12px;
+}
+
+@media (max-width: 991px) {
+    #bg-video {
+        display: none !important;
+    }
+
+    #galery-content {
+        background-color: #D8D0c5; 
+        height: auto;
+        padding: 60px 20px;
+    }
+}
+
+#bg-video{
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    z-index: 1;
+    object-fit: cover;
+    opacity: 80%;
+    background-color: #333;
+    filter: brightness(50%);
+}
+
+#content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+#content h1{
+    margin: 0 auto;
+    font-size: 72px;
+    font-weight: 600;
+    color: white;
+}
+
+#content p{
+    margin: 0 auto;
+    font-size: 36px;
+    font-weight: 600;
+    color: white;
+}
+#check-menu{
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color: #8D6F57;
+    color: white;
+    padding: 8px;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 26px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+
+#card{
+    padding: 12px;
+    gap: 24px;   
+}
+
+#card h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+#card_item img{
+    height: 200px;
+    object-fit: cover;
+}
+
+#card_item h2{
+    font-size: large;
+    font-weight: bold;
+}
+
+#card-container{
+    background-color: #D8D0c5;
+    padding: 6px;
+    border-radius: 10px;
+}
+
+#footer-container{
+    background-color: #8D6F57;
+    color: white;
+}
+
+.footer-link{
+    color: white;
+}
+
+#menu_section {
+    padding: 24px 12px;
+}
+
+#menu_section h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#judul_menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+#judul_menu img {
+    width: 100px;
+}
+
+#judul_menu h2 {
+    font-size: 36px;
+}
+
+#menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 36px;
+    justify-content: center;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.img_wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.img_wrapper img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+}
+
+.isi_menu, #isi_menu {
+    background-color: #D9C4A9;
+    border: 2px solid #3F0D0C;
+    padding: 16px;
+    border-radius: 12px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+}
+
+.isi_menu h2, #isi_menu h2 {
+    font-weight: bold;
+    margin-top: 12px;
+    margin-bottom: 8px;
+    font-size: 22px;
+}
+
+.isi_menu p, #isi_menu p {
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 16px;
+    flex-grow: 1;
+}
+
+.badge_harga {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #8D6F57;
+    border: 1px solid white;
+    border-radius: 12px;
+    padding: 2px 10px;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 0;
+    z-index: 2;
+}
+
+.badge_best_seller, #best_seller {
+    border: 2px solid #06402b;
+    border-radius: 12px;
+    display: inline-block;
+    padding: 4px 12px;
+    color: #06402b;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+#judul_isi_menu {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+#menu_body{
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+}
+
+.photo_item {
+    position: relative;
+    width: 100%;
+    height: 380px; 
+    padding: 0;   
+    overflow: hidden;
+    border-radius: 12px;
+    border: 3px solid #3F0D0C;
+    background-color: #D9C4A9;
+}
+
+.photo_item img {
+    width: 100% !important;  
+    height: 100% !important; 
+    object-fit: cover;    
+    display: block;
+    transition: transform 0.3s ease-in-out; 
+}
+
+.badge_photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.65); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0; 
+    transition: opacity 0.3s ease-in-out;
+    padding: 16px;
+    text-align: center;
+}
+
+.badge_photo span {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.photo_item:hover .badge_photo {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.photo_item:hover img {
+    transform: scale(1.08);
+}
+
+#contact_container {
+    min-height: calc(100vh - 80px); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact_us{
+    color: #8D6F57;
+}
+
+#kontak{
+    background-color: #8D6F57;
+    color: #D8D0c5;
+}
+
+#button_medsos svg, span{
+    color: #D8D0c5;
+}
+
+#form_contact {
+    background-color: #8D6F57;
+    color: #D8D0c5;
+    height: 100%;
+}
+
+#form_contact_body{
+    border: 2px solid white;
+    border-radius: 12px;
+}
+
+#placeholder{
+    height: 56px;
+    resize: none;
+}
+
+.btn_medsos{
+    color: #D9C4A9;
+}
+
+.btn_medsos:hover{
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+}
+
+#visi_misi h1 {
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+#visi_misi h1, #about_content h2, #about_body h1 {
+    color: #8D6F57;
+}
+
+.team_photo span{
+    color: #333;
+}
