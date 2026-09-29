@@ -1,3 +1,30 @@
+name: standard Build push and Deploy
+on: 
+  push:
+    branches: [ "master", "main" ]
+
+jobs: 
+  build-and-push:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: login to docker hub
+        uses: docker/login-action@v3
+        with: 
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      - name: build and push 
+        uses: docker/build-push-action@v5
+        with: 
+          context: . 
+          file: ./dockerfile
+          push: true
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/kedaikopi:latest
+
+
 # DEPLOYMENT
   deploy:
     needs: build-and-push # akan berhasil jika build-and-push berhasil
