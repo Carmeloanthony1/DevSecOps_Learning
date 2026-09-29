@@ -19,8 +19,8 @@ jobs:
       - name: build and push 
         uses: docker/build-push-action@v5
         with: 
-          context: . 
-          file: ./dockerfile
+          context: ./CICD_Template 
+          file: .CICD_Template/dockerfile
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/kedaikopi:latest
 
