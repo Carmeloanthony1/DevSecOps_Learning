@@ -120,4 +120,19 @@ Ketika di coba, maka ia akan menjadikan biji sebagai nilai global
 #Variable type
 x = 5
 y = "Kale"
+z = 1 + 2j
+t = ("apple", "banana", "cherry")
+l = ["apple", "banana", "cherry"]
 print(type(x))
+print(type(y))
+print(type(z))
+print(type(t))
+print(type(l))
+
+port = "8080"
+port_int = int(port)
+
+if port_int == 8080:
+    print("Ya ini udah int")
+else:
+    print("Bukan int wok")
